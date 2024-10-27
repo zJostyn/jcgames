@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (login) {
             login.style.display = "block";
             login.addEventListener('click', function() {
-                window.location.href = './index.html';
+                window.location.href = './../../index.html';
             });
         }
     } else {
@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 window.location.href = './../../home.html';
                 localStorage.removeItem('email');
             });
+        }
+        if (login) {
+            login.style.display = "none";
         }
     }
     if (document.getElementById('productosid') == null) {
