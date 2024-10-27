@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - JC Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body style="position: relative; text-align: center;">
+    <h1 class="p-4 border-b border-gray-400 text-xl font-bold" style="color: rgb(176, 8, 8);">Carrito de Compras</h1>
+    <div class="container mx-auto flex flex-row pt-4" style="position: relative; left: 200px;">
+        <main id="items" class="flex flex-wrap w-3/4" style="z-index: 1000;">
+            <table class="table-auto w-full text-white bg-black bg-opacity-80 backdrop-blur-md rounded-lg shadow-lg" style="margin-right: 5px; margin-top: 10px; margin-left: 5px;">
+                <thead>
+                    <tr style="text-align: center;">
+                        <th class="p-4 border-b-2 border-gray-400">Imagen</th>
+                        <th class="p-4 border-b-2 border-gray-400" >Nombre</th>
+                        <th class="p-4 border-b-2 border-gray-400">Precio</th>
+                        <th class="p-4 border-b-2 border-gray-400">Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items" style="text-align: center;">
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <button class="p-4 border-b border-gray-400 text-xl font-bold" onclick="procederCompra()">Proceder a Facturación</button>
+    <button class="p-4 border-b border-gray-400 text-xl font-bold" onclick="regresarProductos()">Regresar a Productos</button>
+    <button class="p-4 border-b border-gray-400 text-xl font-bold" onclick="eliminarTodo()">Eliminar Todo</button>
+
+    <script type="module" src="../../logica/carrito.js"></script>
+</body>
+</html>

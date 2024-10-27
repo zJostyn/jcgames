@@ -6,64 +6,38 @@
     <title>Productos - JC Games</title>
     <link href="../../output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-900" id="productosid">
     <header class="bg-blue-500 p-4 text-white">
         <h1 class="text-3xl" style="position: absolute; top: 10px;">JC Games</h1>  
         <nav style="margin-left: 37%;">
             <ul class="flex space-x-4">
-                <li><a href="../../index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="../../home.html" class="hover:underline">Inicio</a></li>
                 <li><a href="./productos.html" class="hover:underline">Productos</a></li>
                 <li><a href="./../categorias/categorias.html" class="hover:underline">Categorias</a></li>
                 <li><a href="./../contacto/contacto.html" class="hover:underline">Contacto</a></li>
                 <li><a href="./../acerca/acerca.html" class="hover:underline">Acerca de JC Games</a></li>
             </ul>
         </nav>
+        <div style="align-items: right;">
+            <button id="salir" style="position: absolute; right: 10px; top: 15px; background-color: red; width: 100px; height: 32px; border-radius: 5px;">
+                Cerrar Sesión
+            </button>
+            <button id="carrito" style="position: absolute; right: 120px; top: 15px; background-color: red; width: 100px; height: 32px; border-radius: 5px;">
+                Carrito
+            </button>
+        </div>
     </header>
     <main class="container mx-auto mt-6">
-        <div class="flex flex-wrap">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="width: 400px; height: 330px; margin-bottom: 10px; margin-top: 90px; margin-left: 10px;">
-                <img class="w-full" src="https://media.vandal.net/m/20029/cyberpunk-2077-201961217172698_1.jpg" alt="Producto 1" style="position: relative;width: 180px; height: 180px; left: 110px;">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2" style="margin-top: 5px;">Cyberpunk 2077</div>
-                    <p class="text-gray-700 text-base" style="margin-top: 5px;">
-                        Es un videojuego de rol de acción desarrollado y publicado por CD Projekt.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="width: 400px; height: 330px; margin-bottom: 10px; margin-top: 90px; margin-left: 10px;">
-                <img class="w-full" src="https://www.retroplace.com/pics/ps4/packshots/184880--assassins-creed-valhalla.png" alt="Producto 2" style="position: relative;width: 180px; height: 180px; left: 110px;">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2" style="margin-top: 5px;">Assassin's Creed Valhalla</div>
-                    <p class="text-gray-700 text-base" style="margin-top: 5px;">
-                        Embárcate en una aventura vikinga épica mientras exploras la Inglaterra medieval y luchas por establecer tu propio clan.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="width: 400px; height: 330px; margin-bottom: 10px; margin-top: 90px; margin-left: 10px;">
-                <img class="w-full" src="https://piks.eldesmarque.com/bin/2023/11/16/portada_gta_vi.jpg" alt="Producto 3" style="position: relative;width: 180px; height: 180px; left: 110px;">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2" style="margin-top: 5px;">GTA 6</div>
-                    <p class="text-gray-700 text-base" style="margin-top: 5px;">
-                        Es un videojuego de mundo abierto desarrollado por Rockstar North y publicado por Rockstar Games. Será lanzado para las consolas PlayStation 5, Xbox One y PC.
-                    </p>
-                </div>
-            </div>
-
-            <div class="max-w-sm rounded overflow-hidden shadow-lg" style="width: 400px; height: 330px; margin-bottom: 10px; margin-top: 90px; margin-left: 10px;">
-                <img class="w-full" src="https://juegodigitalecuador.com/files/images/productos/1718042557-call-of-duty-black-ops-6-ps4-pre-orden-0.webp" alt="Producto 4" style="position: relative;width: 180px; height: 180px; left: 110px;">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2" style="margin-top: 5px;">Call of Duty: Black Ops 6</div>
-                    <p class="text-gray-700 text-base" style="margin-top: 5px;">
-                        Es un próximo juego de disparos en primera persona, co-desarrollado por Treyarch y Raven Software y publicado por Activision.
-                    </p>
-                </div>
-            </div>
+        <div class="flex flex-wrap" id="product-list">
         </div>
     </main>    
+    
     <footer class="bg-blue-500 p-4 text-white mt-6 text-center">
         <p>&copy; 2024 JC Games. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="../../logica/salir.js"></script>
+    <script type="module" src="../../logica/productos.js"></script>
+
 </body>
 </html>

@@ -11,13 +11,24 @@
         <h1 class="text-3xl" style="position: absolute; top: 10px;">JC Games</h1>  
         <nav style="margin-left: 37%;">
             <ul class="flex space-x-4">
-                <li><a href="../../index.html" class="hover:underline">Inicio</a></li>
+                <li><a href="../../home.html" class="hover:underline">Inicio</a></li>
                 <li><a href="./../productos/productos.html" class="hover:underline">Productos</a></li>
                 <li><a href="./../categorias/categorias.html" class="hover:underline">Categorias</a></li>
                 <li><a href="./../contacto/contacto.html" class="hover:underline">Contacto</a></li>
                 <li><a href="./acerca.html" class="hover:underline">Acerca de JC Games</a></li>
             </ul>
         </nav>
+        <div style="align-items: right;">
+            <button id="salir" style="position: absolute; right: 10px; top: 15px; background-color: red; width: 100px; height: 32px; border-radius: 5px;">
+                Cerrar Sesión
+            </button>
+            <button id="login" style="position: absolute; right: 10px; top: 15px; background-color: red; width: 100px; height: 32px; border-radius: 5px;">
+                Iniciar Sesión
+            </button>
+            <button id="carrito" style="position: absolute; right: 120px; top: 15px; background-color: red; width: 100px; height: 32px; border-radius: 5px;">
+                Carrito
+            </button>
+        </div>
     </header>
     <main class="max-w-7xl mx-auto p-6">
         <h1 class="text-3xl font-bold mb-4">Acerca de JC Games</h1>
@@ -45,5 +56,8 @@
     <footer class="bg-blue-500 p-4 text-white mt-6 text-center">
         <p>&copy; 2024 JC Games. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="../../logica/salir.js"></script>
+
 </body>
 </html>
